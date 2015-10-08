@@ -13,7 +13,7 @@ public class GameOfLife {
 		GottenGrid[25][25] = 1;
 		GottenGrid[25][24] = 1;
 		GottenGrid[25][23] = 1;
-		GottenGrid[24][24] = 1;
+		GottenGrid[24][23] = 1;
 		GottenGrid[23][23] = 1;
 
 		for(int x = 0; x < 50; x++)
