@@ -25,7 +25,7 @@ public class GameOfLife {
 				//if(GottenGrid[x][y] == 1)
 				//{
 					
-					for(int temp_x = x-1; temp_x < x+1 && temp_x < 50 && y >= x; temp_x++)
+					for(int temp_x = x-1; temp_x < x+1 && temp_x < 50 && y >= 0; temp_x++)
 					{
 						for(int temp_y = y-1; temp_y < y+1 && temp_y < 50 && y >= 0; temp_y++)
 						{				
