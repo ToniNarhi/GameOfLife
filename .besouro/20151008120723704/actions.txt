@@ -1,0 +1,3 @@
+FileOpenedAction 1444295243985 GameOfLife.java 312 1 5 0
+RefactoringAction 1444295314082 GameOfLife.java ADD import java.util.Arrays IMPORT
+EditAction 1444295319221 GameOfLife.java 359 1 5 0
