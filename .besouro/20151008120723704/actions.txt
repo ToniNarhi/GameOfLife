@@ -30,3 +30,6 @@ RefactoringAction 1444297969219 Grid.java ADD import java.util.Random IMPORT
 EditAction 1444298009474 GameOfLife.java 1576 1 10 0
 EditAction 1444298009545 Grid.java 347 1 4 0
 EditAction 1444298062333 GameOfLife.java 1794 1 0 0
+CompilationAction 1444298062415 GameOfLife.java
+CompilationAction 1444298070438 GameOfLife.java
+EditAction 1444298100280 Grid.java 347 1 4 0

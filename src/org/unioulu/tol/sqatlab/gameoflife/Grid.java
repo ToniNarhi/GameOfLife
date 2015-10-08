@@ -11,7 +11,7 @@ public class Grid
 		{
 			for(int y = 0; y < 50; y++)
 			{			
-				grid[x][y] = randomGenerator.nextInt(1);
+				grid[x][y] = randomGenerator.nextInt(2);
 			}
 		
 		}
