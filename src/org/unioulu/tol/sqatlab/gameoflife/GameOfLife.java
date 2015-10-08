@@ -46,7 +46,7 @@ public class GameOfLife {
 				//}
 				if(GottenGrid[x][y] == 1 && tempNeighbors < 2)
 				{					
-					System.out.println(x + y + "Has" +tempNeighbors + "Neigbors");
+					System.out.println(x + "|" + y + "Has" +tempNeighbors + "Neigbors");
 					GottenGrid[x][y] = 0;
 				}
 				
