@@ -30,10 +30,7 @@ public class GameOfLife {
 			for(int y = 0; y < 50; y++)
 			{			
 				int tempNeighbors = 0;
-				
-				//if(GottenGrid[x][y] == 1)
-				//{
-					
+			
 					for(int temp_x = x-1; temp_x < x+1 && temp_x < 50 && temp_x >= 0; temp_x++)
 					{
 						for(int temp_y = y-1; temp_y < y+1 && temp_y < 50 && temp_y >= 0; temp_y++)
@@ -50,7 +47,7 @@ public class GameOfLife {
 					GottenGrid[x][y] = 0;
 				}
 				
-				if(GottenGrid[x][y] == 1 && tempNeighbors == 2 || tempNeighbors == 3)
+				/*if(GottenGrid[x][y] == 1 && tempNeighbors == 2 || tempNeighbors == 3)
 				{
 					
 					GottenGrid[x][y] = 1;
@@ -64,7 +61,7 @@ public class GameOfLife {
 				{
 					
 					GottenGrid[x][y] = 1;
-				}
+				}*/
 			}
 		}
 		System.out.println("After!");
