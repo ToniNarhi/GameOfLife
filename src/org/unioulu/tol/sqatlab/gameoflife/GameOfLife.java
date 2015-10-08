@@ -35,7 +35,7 @@ public class GameOfLife {
 					{
 						for(int temp_y = y-1; temp_y < y+1 && temp_y < 50 && temp_y >= 0; temp_y++)
 						{				
-							if(GottenGrid[temp_x][temp_y] == 1 /*|| temp_x != x || temp_y != y*/)
+							if(GottenGrid[temp_x][temp_y] == 1 || temp_x != x || temp_y != y)
 							{
 								tempNeighbors++;
 							}
