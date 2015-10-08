@@ -44,7 +44,7 @@ public class GameOfLife {
 				//}
 				if(GottenGrid[x][y] == 1 && tempNeighbors < 2)
 				{					
-					GottenGrid[x][y] = 0;
+					GottenGrid[x][y] = 1;
 				}
 				
 				if(GottenGrid[x][y] == 1 && tempNeighbors == 2 || tempNeighbors == 3)
