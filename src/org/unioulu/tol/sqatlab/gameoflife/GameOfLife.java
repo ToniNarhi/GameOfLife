@@ -14,9 +14,10 @@ public class GameOfLife {
 		{
 			for(int y = 0; y < 50; y++)
 			{			
+				System.out.println(GottenGrid[x][y])
 			}
 		
 		}
-		System.out.println(Arrays.deepToString(GottenGrid));
+		//System.out.println(Arrays.deepToString(GottenGrid));
 	}
 }
