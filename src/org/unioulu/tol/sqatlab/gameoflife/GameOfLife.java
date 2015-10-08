@@ -42,12 +42,8 @@ public class GameOfLife {
 						}
 					}
 				//}
-				if(GottenGrid[x][y] == 1 && tempNeighbors < 2)
-				{					
-					GottenGrid[x][y] = 0;
-				}
-				
-				/*if(GottenGrid[x][y] == 1 && tempNeighbors == 2 || tempNeighbors == 3)
+			
+				if(GottenGrid[x][y] == 1 && tempNeighbors == 2 || tempNeighbors == 3)
 				{
 					
 					GottenGrid[x][y] = 1;
@@ -61,7 +57,12 @@ public class GameOfLife {
 				{
 					
 					GottenGrid[x][y] = 1;
-				}*/
+				}
+				if(GottenGrid[x][y] == 1 && tempNeighbors < 2)
+				{					
+					GottenGrid[x][y] = 0;
+				}
+				
 			}
 		}
 		System.out.println("After!");
