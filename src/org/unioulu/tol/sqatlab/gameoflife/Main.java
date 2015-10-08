@@ -6,9 +6,9 @@ public class Main {
 	{
 		GameOfLife GOL = new GameOfLife();
 		char quit = 'a';
-		do
-		{
+		//do
+		//{
 		GOL.Logic();
-		}while(quit != 'q');
+		//}while(quit != 'q');
 	}
 }
