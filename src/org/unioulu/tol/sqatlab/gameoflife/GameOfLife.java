@@ -30,10 +30,14 @@ public class GameOfLife {
 			for(int y = 0; y < 50; y++)
 			{			
 				int tempNeighbors = 0;
-			
-					for(int temp_x = x-1; temp_x < x+1 && temp_x < 50 && temp_x >= 0; temp_x++)
+				int temp_xStart =x -1;
+				int temp_xEnd = x +1;
+				int temp_yStart =y -1;
+				int temp_yEnd = y +1;
+				
+					for(temp_xStart= x-1; temp_xStart < temp_xEnd && temp_xStart < 50 && temp_xStart >= 0; temp_xStart++)
 					{
-						for(int temp_y = y-1; temp_y < y+1 && temp_y < 50 && temp_y >= 0; temp_y++)
+						for(temp_yStart= y-1; temp_yStart < temp_yEnd && temp_yStart < 50 && temp_yStart >= 0; temp_yStart++)
 						{				
 							if(GottenGrid[temp_x][temp_y] == 1/* && ((temp_x != x && temp_y == y) || (temp_y != y && temp_x == x))*/)
 							{
