@@ -15,3 +15,6 @@ EditAction 1444296696624 GameOfLife.java 1127 1 10 0
 EditAction 1444296696702 Main.java 230 1 3 0
 EditAction 1444296889236 GameOfLife.java 1157 1 10 0
 EditAction 1444296915927 Main.java 236 1 3 0
+RefactoringAction 1444297158868 GameOfLife.java ADD int x FIELD
+RefactoringAction 1444297161886 GameOfLife.java REMOVE x FIELD
+EditAction 1444297218868 GameOfLife.java 1511 1 10 0

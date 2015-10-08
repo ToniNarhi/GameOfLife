@@ -22,8 +22,8 @@ public class GameOfLife {
 			{			
 				int tempNeighbors = 0;
 				
-				if(GottenGrid[x][y] == 1)
-				{
+				//if(GottenGrid[x][y] == 1)
+				//{
 					for(int temp_x = x-1; temp_x < x+1; temp_x++)
 					{
 						for(int temp_y = y-1; temp_y < y+1; temp_y++)
@@ -34,10 +34,27 @@ public class GameOfLife {
 							}
 						}
 					}
-				}
-				if(tempNeighbors < 2)
+				//}
+				if(GottenGrid[x][y] == 1 && tempNeighbors < 2)
 				{
+					
 					GottenGrid[x][y] = 0;
+				}
+				
+				if(GottenGrid[x][y] == 1 && tempNeighbors == 2 || tempNeighbors == 3)
+				{
+					
+					GottenGrid[x][y] = 1;
+				}
+				if(GottenGrid[x][y] == 1 && tempNeighbors > 3)
+				{
+					
+					GottenGrid[x][y] = 0;
+				}
+				if(GottenGrid[x][y] == 0 && tempNeighbors == 3)
+				{
+					
+					GottenGrid[x][y] = 1;
 				}
 			}
 		}
