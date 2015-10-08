@@ -42,7 +42,7 @@ public class GameOfLife {
 							}
 						}
 					}
-					System.out.println("Runs"+ runs);
+					//System.out.println("Runs"+ runs);
 				//}
 				if(GottenGrid[x][y] == 1 && tempNeighbors < 2)
 				{					
