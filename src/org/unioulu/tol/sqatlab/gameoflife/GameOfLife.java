@@ -15,7 +15,33 @@ public class GameOfLife {
 		GottenGrid[25][23] = 1;
 		GottenGrid[24][25] = 1;
 		GottenGrid[23][24] = 1;
-
+		
+		for(int x = 0; x < 50; x++)
+		{
+			for(int y = 0; y < 50; y++)
+			{			
+				int tempNeighbors = 0;
+				
+				if(GottenGrid[x][y] == 1)
+				{
+					for(int temp_x = x-1; temp_x < x+1; temp_x++)
+					{
+						for(int temp_y = y-1; temp_y < y+1; temp_y++)
+						{				
+							if(GottenGrid[temp_x][temp_y] == 1)
+							{
+								tempNeighbors++;
+							}
+						}
+					}
+				}
+				if(tempNeighbors < 2)
+				{
+					GottenGrid[x][y] = 0;
+				}
+			}
+		}
+		
 		for(int x = 0; x < 50; x++)
 		{
 			for(int y = 0; y < 50; y++)
@@ -24,6 +50,20 @@ public class GameOfLife {
 			}
 			System.out.println();
 		}
+		
+		/*
+		 * 	x-1y-1	y-1	 x+1y-1
+		 * 	x-1		 x	 x+1
+		 * 	x-1+y	y+1  x+1y+1
+		 * 
+		 * 
+		 * 
+		 * 
+		 * 
+		 * 
+		 */
+		
+		
 		//System.out.println(Arrays.deepToString(GottenGrid));
 	}
 }
