@@ -31,11 +31,11 @@ public class GameOfLife {
 			{			
 				int tempNeighbors = 0;
 			
-					for(int temp_x = x-1; temp_x < x+1 && temp_x < 50 && temp_x >= 1; temp_x++)
+					for(int temp_x = x-1; temp_x < x+1 && temp_x < 50 && temp_x >= 0; temp_x++)
 					{
-						for(int temp_y = y-1; temp_y < y+1 && temp_y < 50 && temp_y >= 1; temp_y++)
+						for(int temp_y = y-1; temp_y < y+1 && temp_y < 50 && temp_y >= 0; temp_y++)
 						{				
-							if(GottenGrid[temp_x][temp_y] == 1 || temp_x != x || temp_y != y)
+							if(GottenGrid[temp_x][temp_y] == 1 /*|| temp_x != x || temp_y != y*/)
 							{
 								tempNeighbors++;
 							}
